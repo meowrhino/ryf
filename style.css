@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  background-color: black;
+  color: white;
+  overflow: auto;
+}
+
+/* Lienzo gigante */
+#universo {
+  position: relative;
+  width: 10000px;
+  height: 10000px;
+}
+
+/* Estilo base para las islas */
+.isla {
+  position: absolute;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid white;
+  border-radius: 12px;
+  z-index: 10;
+}
+
+/* Panel UI fijo */
+#panel-ui {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+  background: rgba(0,0,0,0.6);
+  padding: 10px;
+  border: 1px solid white;
+}
